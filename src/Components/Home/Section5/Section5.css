@@ -1,0 +1,39 @@
+
+
+
+:root{
+    --orange:#fccc4c;
+    --orange2:#e88835;
+    --green:#85c60d;
+    --red:#f2002d;
+    --gray:#989898;
+    --gray2:#767676;
+    --light-gray:#ebebeb;
+    --box-shadow:0 0 15px -6px;
+    --box-shadow2: 0 0 30px 0 rgb(0 0 0 / 12%);
+}
+
+
+
+.sec5-container{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    column-gap: 50px;
+    padding: 3em 10em 0 10em;
+    
+}
+
+@media screen and (max-width:915px) {
+    .sec5-container{
+    
+        padding: 1em 5em;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .sec5-container{
+    
+        padding: 1em;
+    }
+}

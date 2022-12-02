@@ -1,0 +1,97 @@
+
+
+:root{
+    --orange:#fccc4c;
+    --orange2:#e88835;
+    --green:#85c60d;
+    --red:#f2002d;
+    --gray:#989898;
+    --gray2:#767676;
+    --light-gray:#ebebeb;
+    --cream:#fff7efd9;
+    --pink:#e4584b;
+    --box-shadow:0 0 15px -6px;
+    --box-shadow2: 0 0 30px 0 rgb(0 0 0 / 12%);
+}
+
+
+.footer-container{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 3em;
+    padding: 5em 12em;
+    background-color: #2a2a2a;
+    align-items: center;
+}
+
+.info-col ul li,
+.qaccess-col ul li{
+    margin: 1em 0;
+}
+.info-col ul li a,
+.qaccess-col ul li a,
+.callinfo-col p,
+.callinfo-col p a{
+  color: var(--light-gray) !important;
+  font-size: 16px;
+}
+
+.info-col ul,
+.qaccess-col ul{
+    padding: 0;
+}
+.info-col,
+.qaccess-col,
+.callinfo-col,
+.onlinepay-col{
+    text-align: right;
+}
+.callinfo-col p img,
+.callinfo-col p a img{
+    width: 36px;
+   padding: 0 0 0 10px;
+}
+.info-col h3::after,
+.qaccess-col h3::after,
+.callinfo-col h3::after,
+.onlinepay-col h3::after{
+    content: "";
+    width: 2.5em;
+    display: flex;
+    height: 4px;
+    background-color: var(--red);
+    margin: 10px 0 0 0;
+}
+.info-col h3,
+.qaccess-col h3,
+.callinfo-col h3,
+.onlinepay-col h3{
+    color: #fff;
+    margin: 0 0 20px 0;
+}
+.onlinepay-col div img{
+    width: 75%;
+    margin: 0 0 1em 0;
+}
+.onlinepay-col div{
+    width: 110px;
+    height: auto;
+   
+    align-items: center;
+    display: inline-flex;
+    
+}
+
+@media screen and (max-width:700px) {
+
+
+    .footer-container{
+        
+        padding: 5em;
+        
+    }
+    
+
+
+}

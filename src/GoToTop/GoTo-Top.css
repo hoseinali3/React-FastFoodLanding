@@ -1,0 +1,30 @@
+:root{
+    --orange:#fccc4c;
+    --orange2:#e88835;
+    --green:#85c60d;
+    --red:#f2002d;
+    --gray:#989898;
+    --gray2:#767676;
+    --light-gray:#ebebeb;
+    --cream:#fff7efd9;
+    --pink:#e4584b;
+    --box-shadow:0 0 15px -6px;
+    --box-shadow2: 0 0 30px 0 rgb(0 0 0 / 12%);
+}
+
+
+.gototop{
+    position: fixed;
+    display: none;
+    padding: 14px;
+    top: 41em;
+    right: 5em;
+    border-radius: 10em;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+.gototop img{
+    width: 2.5em;
+    transform: rotate(180deg);
+}

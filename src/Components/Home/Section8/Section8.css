@@ -1,0 +1,93 @@
+
+@font-face {
+    font-family: iransans;
+    src: url(../../../Font/IRANSansWeb.ttf);
+}
+
+:root{
+    --orange:#fccc4c;
+    --orange2:#e88835;
+    --green:#85c60d;
+    --red:#f2002d;
+    --gray:#989898;
+    --gray2:#767676;
+    --light-gray:#ebebeb;
+    --cream:#fff7efd9;
+    --pink:#e4584b;
+    --box-shadow:0 0 15px -6px;
+    --box-shadow2: 0 0 30px 0 rgb(0 0 0 / 12%);
+}
+
+
+
+.sec8-container{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-gap: 4em;
+    padding: 5em 10em;
+    background-color: var(--cream);
+    align-items: center;
+}
+
+.sec8-content{
+    text-align: right;
+    line-height: 2;
+    font-size: 22px;
+    color: var(--gray2);
+}
+
+.emailbox-wrapper{
+    position: relative;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec8-leftside input[type=text]{
+    outline: none;
+    border: none;
+    border-radius: 10em;
+    padding: 1em 2em;
+    width: 100%;
+    position: absolute;
+}
+
+.submitBtn{
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10em;
+    background-color: var(--red);
+    color: #fff !important;
+    position: absolute;
+    transition: 0.3s;
+    left: 0.5em;
+}
+
+.submitBtn:hover{
+    background-color: #000;
+}
+
+
+@media screen and (max-width:700px) {
+    .sec8-container {
+       
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        grid-gap: 3em;
+        padding: 3em 2em;
+       
+        align-items: center;
+        justify-content: center;
+    }
+    .sec8-content {
+        
+        font-size: 15px;
+        
+    }
+    .sec8-leftside{
+        margin: 0 0 2em 0;
+    }
+}

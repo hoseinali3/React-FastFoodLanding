@@ -1,0 +1,15 @@
+.pizza-box-contain{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    column-gap: 7em;
+    padding: 0 10em;
+    
+}
+
+.cold{
+    background-color: aqua;
+}
+.hot{
+    background-color: orange;
+}

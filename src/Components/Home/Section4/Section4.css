@@ -1,0 +1,127 @@
+:root{
+    --orange:#fccc4c;
+    --orange2:#e88835;
+    --green:#85c60d;
+    --red:#f2002d;
+    --gray:#989898;
+    --gray2:#767676;
+    --light-gray:#ebebeb;
+    --box-shadow:0 0 15px -6px;
+    --box-shadow2: 0 0 30px 0 rgb(0 0 0 / 12%);
+}
+
+.sec4-container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+    /* grid-template-rows: 150px 1fr; */
+    margin: 8em 0;
+    background-color: #fff7ef;
+    padding: 0 15em;
+    row-gap: 100px;
+   
+}
+.sec4-title{
+    
+    line-height: 4;
+    padding: 2em 5em 0 0;
+    text-align: right;
+   
+}
+.sec4-title h3{
+    font-weight: 700;
+    font-size: 50px;
+   
+}
+.sec4-title span{
+font-size: 16px;
+color: #e4584b;
+display: block;
+line-height: 2;
+margin: 1.5em 0;
+}
+
+.sec4-img{
+   
+    height: 20em;
+    display: flex;
+    justify-content: center;
+   
+}
+.sec4-img img{
+    transform: scale(1.6);
+    margin: 0 0 0 2em;
+}
+
+.sec4-ordery{
+    align-self: start;
+    padding: 10px 15px;
+    background-color: #e4584b;
+    color: #fff !important;
+    border-radius: 10em;
+   
+    transition: 0.3s
+}
+.sec4-ordery:hover{
+    background-color: #000;
+}
+
+
+@media screen and (max-width:1000px) {
+    .sec4-img img{
+        transform: scale(1.2);
+        margin: 0 auto;
+    }
+    .sec4-container{
+    
+    padding: 0 9em;
+    
+    }
+}
+@media screen and (max-width:915px) {
+    .sec4-container {
+        margin: 5em 0;
+       
+        row-gap: 60px;
+    }
+    .sec4-img {
+        
+        margin: 0 0 4em 0;
+        
+    }
+    .sec4-title {
+       
+        padding: 2em 6em;
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (max-width:700px) {
+    .pizza-box-container {
+       
+        padding: 0;
+    }
+
+
+    .sec4-container {
+        padding: 0;
+        margin: 0;
+        row-gap: 20px;
+        grid-template-columns: repeat(auto-fit,minmax(335px,1fr));
+    }
+    .sec4-title{
+       
+        padding: 1em;
+        text-align: center;
+    }
+    .sec4-title h3{
+        
+        font-size: 32px;
+    }
+    
+    .sec4-img img {
+        transform: scale(0.8);
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,100 @@
+
+:root{
+    --orange:#fccc4c;
+    --green:#85c60d;
+    --box-shadow:0 0 15px -6px;
+}
+.side-box-contain{
+    background-color: #fff7ef;
+    height: 9em;
+    position: relative;
+    top: 1em;
+}
+.left-side-box,
+.right-side-box{
+    border-radius: 15em;
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 12%);
+    position: absolute;
+    top: 3em;
+    width: max-content;
+    padding: 5px;
+    left: 12em;
+    z-index: 999;
+    background-color: #fff;
+}
+.right-side-box{
+    right: 12em !important;
+    top: 3em;
+    padding: 0 24px;
+}
+
+.call-title,
+.call-number{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.left-side-box a{
+    border-radius: 20em;
+    margin: 0 5px;
+    transition: 0.3s;
+    width: 36px;
+    display: inline-flex;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+}
+.left-side-box a:hover{
+    background-color: var(--orange);
+}
+.left-side-box a img{
+   width: 25px;
+}
+
+.count{
+    position: absolute;
+    color: #fff;
+    background-color: #333;
+    margin: -48px 26px 0 0;
+    display: flex;
+    font-size: 12px!important;
+    line-height: 15px!important;
+    height: 22px;
+    min-width: 23px;
+    border-radius: 7em;
+    justify-content: center;
+    font-weight: 700;
+    align-items: center;
+   
+}
+
+
+@media screen and (max-width:1299px) {
+    .side-box-contain{
+       
+        top: 0;
+    }
+}
+
+
+
+@media screen and (max-width:1059px) {
+    .right-side-box{
+        display: none;
+    }
+    .left-side-box{
+        position: fixed;
+        bottom: 2em;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: unset;
+    }
+    .side-box-contain {
+       
+        height: 7em;
+        
+    }
+}
+

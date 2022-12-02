@@ -1,0 +1,78 @@
+
+@font-face {
+    font-family: iransans;
+    src: url(../../../Font/IRANSansWeb.ttf);
+}
+
+:root{
+    --orange:#fccc4c;
+    --orange2:#e88835;
+    --green:#85c60d;
+    --red:#f2002d;
+    --gray:#989898;
+    --gray2:#767676;
+    --light-gray:#ebebeb;
+    --cream:#fff7efd9;
+    --pink:#e4584b;
+    --box-shadow:0 0 15px -6px;
+    --box-shadow2: 0 0 30px 0 rgb(0 0 0 / 12%);
+}
+
+
+
+.sec7-container{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 4em;
+    padding: 5em 10em;
+    background-image: url(/public/image/back-romana-white-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box{
+    padding: 2em;
+    
+    border-radius: 10px;
+
+}
+
+.box img{
+    width: 5em;
+   opacity: 0.5;
+}
+
+.box img,
+.box p{
+    margin:18px 0;
+}
+
+.sec7-title{
+    font-size: 20px;
+}
+.sec7-content{
+    color: var(--gray);
+}
+
+.secbox1{
+    background-color: #f1f0f9 ;
+}
+.secbox2{
+    background-color: #effff6  ;
+}
+.secbox3{
+    background-color: #fff7ef ;
+}
+.secbox4{
+    background-color: #f2fafb ;
+}
+
+
+@media screen and (max-width:700px) {
+    .sec7-container{
+        grid-gap: 2em;
+        padding: 2em 1em;
+    }
+}
