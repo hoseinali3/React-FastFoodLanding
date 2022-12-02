@@ -82,3 +82,11 @@
 border: 1px solid #000;
 color: var(--red) !important;
 }
+
+
+@media screen and (max-width:330px) {
+    .pizzaBox {
+        width: 93%;
+        
+    }
+}

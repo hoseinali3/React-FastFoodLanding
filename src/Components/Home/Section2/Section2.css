@@ -135,3 +135,14 @@ color: var(--gray);
     }
     
 }
+
+@media screen and (max-width:320px) {
+    .food-box1 a, .food-box2 a, .food-box3 a {
+       
+        grid-template-rows: 15em repeat(3,60px) 70px;
+    }
+    .food-btn {
+      
+        padding: 10px;
+    }
+}

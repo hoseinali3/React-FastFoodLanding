@@ -109,3 +109,15 @@ background-color: var(--cream);
         line-height: 2;
     }
 }
+@media screen and (max-width:330px) {
+   
+    .P1 {
+        
+        font-size: 17px;
+    }
+    .P2 {
+        
+        font-size: 24px;
+    }
+    
+}

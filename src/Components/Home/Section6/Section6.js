@@ -1,6 +1,6 @@
 import './Section6.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import pizzac from './../../../image/pizza-2.png'
 
 export default function Section6() {
   return (
@@ -8,7 +8,7 @@ export default function Section6() {
     <div className="sec6-container">
 
     <div className="box2">
-        <img src="image/pizza-2.png" alt="" />
+        <img src={pizzac} alt="" />
         <p className='P1'>نمی توانید آنچه را دوست دارید پیدا کنید؟</p>
         <p className='P2'>خودت غذاتو بساز!</p>
         <p className='P3'>مواد تشکیل دهنده خود را انتخاب کنید و آنها را روی مواد خود قرار دهید

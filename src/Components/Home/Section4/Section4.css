@@ -125,3 +125,23 @@ margin: 1.5em 0;
         margin: 0 auto;
     }
 }
+
+
+@media screen and (max-width:330px) {
+    .pizza-box-container {
+       
+        padding: 0;
+    }
+
+
+    .sec4-container {
+       
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    }
+   
+    .sec4-img img {
+        transform: scale(0.7);
+      
+    }
+   
+}

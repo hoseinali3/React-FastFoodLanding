@@ -95,3 +95,12 @@
 
 
 }
+@media screen and (max-width:330px) {
+
+    .footer-container {
+        padding: 3em 2em;
+    }
+    
+
+
+}

@@ -1,6 +1,6 @@
 import './Section4.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import pizzatray from './../../../image/pizza-tray-2.png'
 export default function Section4() {
   return (
     <div className='sec4-container'>
@@ -11,7 +11,7 @@ export default function Section4() {
             <a href="#" className='sec4-ordery'>سفارش دهید</a>
     </div>
     <div className="sec4-img">
-<img src="image/pizza-tray-2.png" alt="" />
+<img src={pizzatray} alt="" />
    
     </div>
 </div>

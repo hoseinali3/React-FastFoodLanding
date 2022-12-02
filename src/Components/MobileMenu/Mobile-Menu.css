@@ -131,3 +131,10 @@ transition: 0.5s;
        
     }
 }
+
+@media screen and (max-width:330px) {
+    .hamburger-menu {
+        top: 6em;
+        right: 1em;
+    }
+}

@@ -1,5 +1,6 @@
 import './Navbar1.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import lafkalogo from './../../image/logo-lafka-shop.png'
 
 export default function Navbar1() {
     return (
@@ -17,7 +18,7 @@ export default function Navbar1() {
             </div>
             <div className="logo">
             <a href="#">
-                <img src="image/logo-lafka-shop.png" className='img-fluid' alt="" />
+                <img src={lafkalogo} className='img-fluid' alt="" />
             </a>
             </div>
             <div className="left-side-nav">

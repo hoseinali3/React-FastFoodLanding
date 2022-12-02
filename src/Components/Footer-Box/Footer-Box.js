@@ -1,5 +1,14 @@
 import './Footer-Box.css'
 
+import clockicon from './../../icons/clock copy.png'
+import locationdoticon from './../../icons/location-dot copy.png'
+import phoneflipicon from './../../icons/phone-flip copy.png'
+import phoneofficeicon from './../../icons/phone-office copy.png'
+import mailicon from './../../icons/icons8-mail-96.png'
+import behpardakhticon from './../../icons/Behpardakht-Mellat-Logo-PNG-Way2pay-99-05-26 white.png'
+import bankicon from './../../icons/e17731.png'
+import sadadicon from './../../icons/sadad-logo white.png'
+import pasargadicon from './../../icons/pasargad-logo white.png'
 
 
 
@@ -30,25 +39,25 @@ export default function FooterBox() {
   </div>
   <div className="callinfo-col">
     <h3>اطلاعات تماس</h3>
-    <p><img src="icons/clock copy.png" alt="" /> شنبه - پنجشنبه : 10:00 - 23:00</p>
-    <p><img src="icons/location-dot copy.png" alt="" /> تهران - خ ولیعصر - مجتمع اداری ولیعصر</p>
-    <p><img src="icons/phone-flip copy.png" alt="" /> 09213318307</p>
-    <p><img src="icons/phone-office copy.png" alt="" /> 02188789010</p>
-    <p><a href="#"><img src="icons/icons8-mail-96.png" alt="" /> orders@pizza.com</a></p>
+    <p><img src={clockicon} alt="" /> شنبه - پنجشنبه : 10:00 - 23:00</p>
+    <p><img src={locationdoticon} alt="" /> تهران - خ ولیعصر - مجتمع اداری ولیعصر</p>
+    <p><img src={phoneflipicon} alt="" /> 09213318307</p>
+    <p><img src={phoneofficeicon} alt="" /> 02188789010</p>
+    <p><a href="#"><img src={mailicon} alt="" /> orders@pizza.com</a></p>
     </div>
     <div className="onlinepay-col">
       <h3>پرداخت آنلاین</h3>
       <div>
-      <img src="icons/Behpardakht-Mellat-Logo-PNG-Way2pay-99-05-26 white.png" alt="" />
+      <img src={behpardakhticon} alt="" />
       </div>
       <div>
-      <img src="icons/e17731.png" alt="" />
+      <img src={bankicon} alt="" />
       </div>
       <div>
-      <img src="icons/sadad-logo white.png" alt="" />
+      <img src={sadadicon} alt="" />
       </div>
       <div>
-      <img src="icons/pasargad-logo white.png" alt="" />
+      <img src={pasargadicon} alt="" />
       </div>
       </div>    
     </footer>

@@ -37,3 +37,9 @@
         padding: 1em;
     }
 }
+@media screen and (max-width:330px) {
+    .sec5-container {
+      
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    }
+}

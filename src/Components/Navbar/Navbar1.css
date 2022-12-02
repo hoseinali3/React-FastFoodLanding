@@ -114,3 +114,10 @@ justify-content: center;
         display: none;
     }
 }
+
+
+@media screen and (max-width:330px) {
+    .logo img {
+        width: 6em;
+    }
+}
