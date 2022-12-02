@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/React-FastFoodLanding/static/css/main.fd7f9770.css",
+    "main.js": "/React-FastFoodLanding/static/js/main.219b72cb.js",
+    "static/js/787.8bd18a4b.chunk.js": "/React-FastFoodLanding/static/js/787.8bd18a4b.chunk.js",
+    "static/media/YekanV3.ttf": "/React-FastFoodLanding/static/media/YekanV3.f6a0838b6690eaaa2898.ttf",
+    "static/media/back-romana-white-2.jpg": "/React-FastFoodLanding/static/media/back-romana-white-2.af35037979cf1bb2d72d.jpg",
+    "static/media/YekanV3.eot": "/React-FastFoodLanding/static/media/YekanV3.9db58f99bcd38a0e67b6.eot",
+    "static/media/IRANSansWeb.ttf": "/React-FastFoodLanding/static/media/IRANSansWeb.84fda3e85b2ec3885be1.ttf",
+    "static/media/YekanV3.woff": "/React-FastFoodLanding/static/media/YekanV3.18af8c75ab1951a5e56d.woff",
+    "index.html": "/React-FastFoodLanding/index.html",
+    "main.fd7f9770.css.map": "/React-FastFoodLanding/static/css/main.fd7f9770.css.map",
+    "main.219b72cb.js.map": "/React-FastFoodLanding/static/js/main.219b72cb.js.map",
+    "787.8bd18a4b.chunk.js.map": "/React-FastFoodLanding/static/js/787.8bd18a4b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd7f9770.css",
+    "static/js/main.219b72cb.js"
+  ]
+}
