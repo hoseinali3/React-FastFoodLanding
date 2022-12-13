@@ -94,21 +94,31 @@
 
 .accordion{
     box-shadow: unset !important;
+    border: none !important;
+    border-radius: 0 !important;
 }
 
-
-.mobile-li span{
+.mobile-li,
+.mobile-color{
+    background-color: #fed25d !important;
+}
+.mobile-li{
+    padding: 0.5em !important
+}
+.mobile-litxt span{
     font-family: B-Yekan !important;
     padding: 0.5em !important;
     text-align: right;
 }
 
-.css-1160xiw-MuiPaper-root-MuiDrawer-paper,
-.css-1bzt3mv-MuiButtonBase-root-MuiListItemButton-root{
-    background-color: #fed25d !important;
+
+.devider{
+    border-color: #0000007d !important 
 }
-.css-9mgopn-MuiDivider-root{
-    border-color: #0000007d !important;
+
+.mobile-color{
+   
+    height:100em !important;
 }
 
 @media screen and (max-width:1299px){

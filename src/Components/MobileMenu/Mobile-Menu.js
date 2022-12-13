@@ -35,19 +35,19 @@ export default function MobileMenu() {
   };
   const list = (anchor) => (
 
-    <List sx={{ width: 250, direction: "rtl"}}>
+    <List sx={{ width: 250, direction: "rtl" }} className="mobile-color">
       {NavbarDatas.map((item, index) => (
         <>
-          <ListItem key={index} sx={{ padding: 0 }} >
+          <ListItem key={index} sx={{ padding: 0 }}  >
 
-            {!item.submenu ? (<ListItemButton><ListItemText primary={item.title} className="mobile-li">
+            {!item.submenu ? (<ListItemButton><ListItemText primary={item.title} className="mobile-litxt">
 
 
               <NavLink style={{ padding: "3px 0", textAlign: "right" }} to={`/${item.link}`}></NavLink>
 
             </ListItemText>
             </ListItemButton>) : (<Accordion sx={{ width: "100%", direction: "rtl", textAlign: "right" }} className="accordion">
-              <ListItemButton sx={{ padding: "0.5em" }}>
+              <ListItemButton className="mobile-li" >
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
                   aria-controls="panel1a-content"
@@ -68,7 +68,7 @@ export default function MobileMenu() {
                       <img src={menu.icon} className="mobile-icons" alt="" /> <NavLink to={`/${menu.link}`}>{menu.title}</NavLink>
                     </AccordionDetails>
                   </ListItemButton>
-                  <Divider />
+                  <Divider className='devider'/>
                 </>
 
               ))}
@@ -76,29 +76,32 @@ export default function MobileMenu() {
 
 
           </ListItem>
-          <Divider />
+          <Divider className='devider'/>
         </>
       ))}
 
     </List>
-
+    
   );
 
   return (
     <div className='mobile-menu' >
-      <Fragment key={"right"} >
+      <Fragment key={"right"}  sx={{direction:"ltr"}}>
 
         <div className="hamburger-menu" onClick={toggleDrawer("right", true)} >
           <div className="hamburger-menu-lines"></div>
         </div>
+        
+
         <SwipeableDrawer
           anchor={"right"}
           open={state["right"]}
           onClose={toggleDrawer("right", false)}
           sx={{direction:"ltr"}}
-        >
+          >
           {list("right")}
         </SwipeableDrawer>
+         
       </Fragment>
 
 
