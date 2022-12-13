@@ -15,16 +15,89 @@
 
 .gototop{
     position: fixed;
-    display: none;
+    visibility: hidden;
+    display: flex;
+    opacity: 0;
     padding: 14px;
-    top: 41em;
+    top: 43em;
     right: 5em;
     border-radius: 10em;
-    background-color: #fff;
+    background-color: var(--orange);
     box-shadow: var(--box-shadow);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.gototop.active{
+  
+
+    visibility: visible;
+    opacity: 1;
+    top: 41em;
+
 }
 
 .gototop img{
     width: 2.5em;
     transform: rotate(180deg);
+}
+
+
+
+
+
+@media screen and (max-width:1059px) {
+
+    .gototop.active{
+      
+        top: 38em;
+    
+    }
+    
+}
+
+
+@media screen and (max-width:510px) {
+   
+    .gototop{
+        
+      
+        right: 2em;
+        
+    }
+ 
+
+   
+        
+}
+
+
+@media screen and (max-width:420px) {
+
+    .gototop{
+        
+      
+        right: 1em;
+        
+    }
+  
+    .gototop.active{
+      
+    
+    
+        top: 35em;
+    
+    }
+
+}
+
+@media screen and (max-width:380px) {
+
+  
+    .gototop.active{
+
+        visibility: hidden;
+        opacity: 0;
+    
+    }
+
 }

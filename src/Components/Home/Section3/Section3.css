@@ -32,7 +32,7 @@ color: var(--gray);
 .pizza-box-container{
     grid-column: 1/-1;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
     column-gap: 50px;
     padding: 0 10em;
     
@@ -51,14 +51,14 @@ color: var(--gray);
         margin: 0 auto;
         padding: 0;
     }
-
-
-    .sec3-container {
     
+    
+    .sec3-container {
+        
         padding: 0 2em;
     }
     .sec3-title{
-       
+        
         line-height: 2;
     }
     .sec3-title h3{
@@ -68,14 +68,18 @@ color: var(--gray);
     .sec3-title span{
         margin: 1em 0 0 0;
         display: block;
-        }
-        
+    }
+    
 }
 
 
 @media screen and (max-width:330px) {
+    .pizza-box-container {
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
+    }
     .sec3-container {
-    
+        
         padding: 0 1em;
     }
 }

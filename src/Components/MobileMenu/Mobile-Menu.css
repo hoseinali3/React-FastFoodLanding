@@ -3,6 +3,12 @@
     font-family: iransans;
     src: url(../../Font/IRANSansWeb.ttf);
 }
+@font-face {
+    font-family: B-Yekan;
+    src: url(../../Font/YekanV3.eot);
+    src: url(../../Font/YekanV3.ttf);
+    src: url(../../Font/YekanV3.woff);
+}
 
 :root{
     --orange:#fccc4c;
@@ -20,7 +26,7 @@
 .mobile-menu{
     display: none;
     background-color: #fff7ef;
-    
+    direction: rtl !important;
     }
 .hamburger-menu{
     border-radius: 10em;
@@ -76,7 +82,34 @@
   transform: rotate(-45deg) translate(35px,35px);
   }
 
+.mobile-icons{
+    margin: 0 6px;
+    width: 30px;
+}
+.mobile-undermenu{
+    display: flex;
+    align-items: center;
+    padding: 0.5em 1em !important;
+}
 
+.accordion{
+    box-shadow: unset !important;
+}
+
+
+.mobile-li span{
+    font-family: B-Yekan !important;
+    padding: 0.5em !important;
+    text-align: right;
+}
+
+.css-1160xiw-MuiPaper-root-MuiDrawer-paper,
+.css-1bzt3mv-MuiButtonBase-root-MuiListItemButton-root{
+    background-color: #fed25d !important;
+}
+.css-9mgopn-MuiDivider-root{
+    border-color: #0000007d !important;
+}
 
 @media screen and (max-width:1299px){
     .mobile-menu{
