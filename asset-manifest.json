@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-FastFoodLanding/static/css/main.2269bd25.css",
-    "main.js": "/React-FastFoodLanding/static/js/main.a10dd7d2.js",
+    "main.css": "/React-FastFoodLanding/static/css/main.b4d7570c.css",
+    "main.js": "/React-FastFoodLanding/static/js/main.07b51307.js",
     "static/js/787.8bd18a4b.chunk.js": "/React-FastFoodLanding/static/js/787.8bd18a4b.chunk.js",
     "static/media/pizzetta-2.png": "/React-FastFoodLanding/static/media/pizzetta-2.35051bf057993c955410.png",
     "static/media/pizza-tray-2.png": "/React-FastFoodLanding/static/media/pizza-tray-2.86686bb832a88cb77cec.png",
@@ -40,12 +40,12 @@
     "static/media/pizza-slice.png": "/React-FastFoodLanding/static/media/pizza-slice.d37aee569714be871382.png",
     "static/media/heart-3510.svg": "/React-FastFoodLanding/static/media/heart-3510.509057abdf7b1253ebd3409159459d2d.svg",
     "index.html": "/React-FastFoodLanding/index.html",
-    "main.2269bd25.css.map": "/React-FastFoodLanding/static/css/main.2269bd25.css.map",
-    "main.a10dd7d2.js.map": "/React-FastFoodLanding/static/js/main.a10dd7d2.js.map",
+    "main.b4d7570c.css.map": "/React-FastFoodLanding/static/css/main.b4d7570c.css.map",
+    "main.07b51307.js.map": "/React-FastFoodLanding/static/js/main.07b51307.js.map",
     "787.8bd18a4b.chunk.js.map": "/React-FastFoodLanding/static/js/787.8bd18a4b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2269bd25.css",
-    "static/js/main.a10dd7d2.js"
+    "static/css/main.b4d7570c.css",
+    "static/js/main.07b51307.js"
   ]
 }
