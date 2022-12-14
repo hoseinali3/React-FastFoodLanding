@@ -48,14 +48,14 @@ const NavbarDatas = [
     menus:[],
     submenu:false
     },
-    {id:5,
+    {id:6,
     title:"درباره ما",
     link:"React-FastFoodLanding",
     menus:[],
     submenu:false
 
     },
-    {id:5,
+    {id:7,
     title:"تماس با ما",
     link:"React-FastFoodLanding",
     menus:[],

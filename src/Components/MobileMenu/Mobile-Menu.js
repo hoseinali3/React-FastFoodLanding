@@ -18,27 +18,21 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
+import CloseIcon from '@mui/icons-material/Close';
 
 export default function MobileMenu() {
-  const [state, setState] = useState(false)
+  const [open, setOpen] = useState(false)
 
 
 
-  const toggleDrawer = (anchor, open) => (event) => {
-    console.log(open);
-    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-      return;
-    }
-
-    setState({ ...state, [anchor]: open });
-  };
+ 
   const list = (anchor) => (
 
     <List sx={{ width: 250, direction: "rtl" }} className="mobile-color">
+      <CloseIcon sx={{marginRight:2,fontSize:50,color:"#3a3a3a"}} onClick={() => setOpen(prev => !prev)}/>
       {NavbarDatas.map((item, index) => (
-        <>
-          <ListItem key={index} sx={{ padding: 0 }}  >
+        <div key={item.id}>
+          <ListItem  sx={{ padding: 0 }}  >
 
             {!item.submenu ? (<ListItemButton><ListItemText primary={item.title} className="mobile-litxt">
 
@@ -60,16 +54,16 @@ export default function MobileMenu() {
               </ListItemButton>
               {item.menus.map(menu => (
 
-                <>
+                <div key={menu.id}>
                   <ListItemButton>
 
-                    <AccordionDetails key={menu.id} className="mobile-undermenu">
+                    <AccordionDetails  className="mobile-undermenu">
 
                       <img src={menu.icon} className="mobile-icons" alt="" /> <NavLink to={`/${menu.link}`}>{menu.title}</NavLink>
                     </AccordionDetails>
                   </ListItemButton>
                   <Divider className='devider'/>
-                </>
+                </div>
 
               ))}
             </Accordion>)}
@@ -77,7 +71,7 @@ export default function MobileMenu() {
 
           </ListItem>
           <Divider className='devider'/>
-        </>
+        </div>
       ))}
 
     </List>
@@ -86,23 +80,23 @@ export default function MobileMenu() {
 
   return (
     <div className='mobile-menu' >
-      <Fragment key={"right"}  sx={{direction:"ltr"}}>
+      
 
-        <div className="hamburger-menu" onClick={toggleDrawer("right", true)} >
+        <div className="hamburger-menu" onClick={() => setOpen(prev => !prev)} >
           <div className="hamburger-menu-lines"></div>
         </div>
         
 
         <SwipeableDrawer
           anchor={"right"}
-          open={state["right"]}
-          onClose={toggleDrawer("right", false)}
+          open={open}
+          onClose={() => setOpen(prev => !prev)}
           sx={{direction:"ltr"}}
           >
           {list("right")}
         </SwipeableDrawer>
          
-      </Fragment>
+      
 
 
 

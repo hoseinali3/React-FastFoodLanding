@@ -19,7 +19,7 @@
     display: flex;
     opacity: 0;
     padding: 14px;
-    top: 43em;
+    bottom: 0;
     right: 5em;
     border-radius: 10em;
     background-color: var(--orange);
@@ -32,7 +32,7 @@
 
     visibility: visible;
     opacity: 1;
-    top: 41em;
+    bottom: 3em;
 
 }
 
@@ -45,15 +45,6 @@
 
 
 
-@media screen and (max-width:1059px) {
-
-    .gototop.active{
-      
-        top: 38em;
-    
-    }
-    
-}
 
 
 @media screen and (max-width:510px) {
@@ -80,13 +71,7 @@
         
     }
   
-    .gototop.active{
-      
-    
-    
-        top: 39em;
-    
-    }
+  
 
 }
 
@@ -95,9 +80,9 @@
   
     .gototop.active{
 
-        visibility: hidden;
-        opacity: 0;
-    
+        /* visibility: hidden;
+        opacity: 0; */
+            bottom: 7em;
     }
 
 }
